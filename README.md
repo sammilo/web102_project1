@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Web Development Project 1 - *INIT FIU Events*
 
 Submitted by: **Samantha Milo**
