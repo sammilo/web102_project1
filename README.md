@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Web Development Project 1 - *INIT FIU Events*
 
 Submitted by: **Samantha Milo**
@@ -55,3 +56,45 @@ Need to write down the process for pushing changes to git.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Publishing to GitHub
+
+To add this project to GitHub from PowerShell, run the commands below (replace <your-repo-url> with the SSH or HTTPS URL of the repository you create on GitHub):
+
+```powershell
+git init
+git add .
+git commit -m "Initial commit"
+# create a repository on GitHub (via website) and then add it as remote, for example:
+git remote add origin <your-repo-url>
+git branch -M main
+git push -u origin main
+```
+
+If you have the GitHub CLI installed you can create the repo and push in one step:
+
+```powershell
+gh repo create my-repo --public --source=. --remote=origin --push
+```
+
+Notes:
+- If you use HTTPS remote you will be asked for credentials the first time you push (or use a personal access token).
+- Make sure `.gitignore` contains `node_modules/` and build output so you don't push large or generated files.
+>>>>>>> 3eeed28 (Initial commit)

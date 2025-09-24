@@ -1,0 +1,155 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 232, 26, 0.87);
+  background-color: #1f1f1f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #005237;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #5ff3b5;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Use normal flow so the root element can stretch to the viewport width */
+  display: block;
+}
+
+/* Ensure the app root fills the available width so grids can expand */
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #161616;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #a6fcd4;
+  }
+  a:hover {
+    color: #74ffae;
+  }
+  button {
+    background-color: #ffffff;
+  }
+}
+
+/* Layout for the cards grid */
+.cards-wrap {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #ffec46ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cards-container {
+  width: 100%;
+  /* allow the container to grow to the available viewport width so the grid can fit more columns */
+  max-width: none;
+  padding: 0 1rem;
+}
+
+.cards-header {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.cards-grid {
+  display: grid;
+  /* auto-fill lets columns fill available space; bump min width so more natural wrapping */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.card {
+  background: #181818ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 320px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: #ffffffff;
+}
+
+.card .btn {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  .cards-wrap { background: #f3f4f6; }
+  .card { background: white; }
+  .card p { color: #444; }
+  .page-title { color: #111827; }
+}
